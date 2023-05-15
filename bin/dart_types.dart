@@ -30,4 +30,21 @@ switch (myInteger) {
     print('myInteger is something else');
     break;
 }
+
+
+for (int i = 0; i < 10; i++) {
+  print(i);
+}
+
+bool myBool = true;
+while (myBool) {
+  print('myBool is true');
+  myBool = false;
+}
+
+
+do {
+  print('hello');
+}while(false);
+
 }
