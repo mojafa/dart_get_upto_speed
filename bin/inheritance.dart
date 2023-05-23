@@ -26,11 +26,13 @@ firstName: 'John',
 
 
 
-print (user1 == user2) ;
+print (user1 == user2) ; 
 
 //referential equality
 print (user3 == user4) ;
-}
+} 
+
+//every single class in dart extends object...like java literally
 
 class User {
 final String firstName;
