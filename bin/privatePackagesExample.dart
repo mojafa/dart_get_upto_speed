@@ -6,7 +6,10 @@ void exampleMethod(){
  //can't even be accesses from the same file
   // x._private;
 
-  NonInstantiable._();
+  //can't even be accesses from the same file
+  // x._privateMethod();
+  // can't even be accesses from the same file
+  // x._privateGetter;
 
 
 } 

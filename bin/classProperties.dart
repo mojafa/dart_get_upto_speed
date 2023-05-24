@@ -17,7 +17,7 @@ class User {
     required this.lastName,
     required String email,
   }){ 
-   this.email = email; 
+    this._email = email;
   }
 
 String getFullName() => '$firstName $lastName';

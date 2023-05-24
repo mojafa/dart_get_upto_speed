@@ -22,10 +22,18 @@ _private;
 //here are no class private fields only package private fields
 } 
 
+// class NonInstantiable{
+//   NonInstantiable._();
+//   //this class can't be instantiated
+//   //because it's constructor is private
+//   //but it can be extended
+// }
+
+}
+
 class NonInstantiable{
   NonInstantiable._();
   //this class can't be instantiated
   //because it's constructor is private
   //but it can be extended
-}
 }
