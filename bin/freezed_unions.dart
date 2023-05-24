@@ -55,9 +55,37 @@ void main(List<String> arguments) {
 
 @freezed
 class Result with _$Result {
-  const factory Result.loading() = _Loading;
-  const factory Result.success(int value) = _Success;
-  const factory Result.failure(String errorMessage) = _Failure;
+  const factory Result.loading() = _Loading {
+    // TODO: implement Result.loading
+    throw UnimplementedError();
+  }
+  const factory Result.success(int value) = _Success {
+    // TODO: implement Result.success
+    throw UnimplementedError();
+  }
+  const factory Result.failure(String errorMessage) = _Failure {
+    // TODO: implement Result.failure
+    throw UnimplementedError();
+  }
+  
+  Object? maybeWhen({required String Function() orElse, required String Function(dynamic message) failure}) {
+    return null;
+  }
+  
+  Object? maybeMap({required String Function() orElse, required String Function(dynamic message) failure}) {
+    return null;
+  }
+  
+  Object? map({required String Function(dynamic _) loading, required String Function(dynamic successCase) success, required String Function(dynamic failureCase) failure}) {
+    return null;
+  }
+  
+  Object? when({required String Function() loading, required String Function(dynamic value) success, required String Function(dynamic message) failure}) {
+    return null;
+  }
+}
+
+class _$Result {
 }
 
 
