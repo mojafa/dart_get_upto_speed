@@ -9,7 +9,10 @@ void main(List<String> arguments) {
   );
 
   admin as User;
-  final user = Admin('John', 'Doe', firstName: '', lastName: '');
+  final user = Admin(
+    specialAdminField: 0,
+    firstName: 'John', 
+    lastName: 'does');
   print(user is! Admin);
 
   if (user is Admin) {
