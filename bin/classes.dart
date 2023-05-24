@@ -1,20 +1,19 @@
 void main(List<String> arguments){
-  User myUser = const User(
-    name: 'John', 
+  User myUser = User(
+    firstName: 'John', 
+    lastName: 'Smith',
     age: 30, 
     password: 'password', 
-    photoUrl: 'https://example.com/photo.jpg',
+    photoUrl: 'https://example.com/photo.jpg', name: '',
     );
 
     myUser.name = 'Matthew Smith';
+    print(myUser.name);
 }
  
 class User{
-  // late fields can be nullable
-  // late String name;
   late   String name;
-
- final  int age = 30;
+ int age = 30;
  final  String password ;
   final String photoUrl ;
 
@@ -30,15 +29,15 @@ class User{
   //   }
 
 //making cinstructir call to call it 
-    const User({
+    User({
     required String firstName,
     required  String lastName, 
     required this.age, 
     required this.password, 
     required this.photoUrl, required String name
-    }) : name = '$firstName $lastName';
-
-
+    }) : name = '$firstName $lastName'{
+      print('User constructor');
+    }
 
     bool hasLongName(){
       return name.length > 10;
